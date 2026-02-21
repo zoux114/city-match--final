@@ -1,0 +1,2106 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "我在聚会时总是很活跃。",
+      "trait": "E",
+      "is_reverse": false
+    },
+    {
+      "id": 2,
+      "text": "我不介意成为大家的关注中心。",
+      "trait": "E",
+      "is_reverse": false
+    },
+    {
+      "id": 3,
+      "text": "我喜欢主动开启对话。",
+      "trait": "E",
+      "is_reverse": false
+    },
+    {
+      "id": 4,
+      "text": "我有很多不同的社交圈子。",
+      "trait": "E",
+      "is_reverse": false
+    },
+    {
+      "id": 5,
+      "text": "我在人群中感到精力充沛。",
+      "trait": "E",
+      "is_reverse": false
+    },
+    {
+      "id": 6,
+      "text": "我倾向于大声说出我的想法。",
+      "trait": "E",
+      "is_reverse": false
+    },
+    {
+      "id": 7,
+      "text": "我喜欢快节奏的生活。",
+      "trait": "E",
+      "is_reverse": false
+    },
+    {
+      "id": 8,
+      "text": "我通常是个乐观的人。",
+      "trait": "E",
+      "is_reverse": false
+    },
+    {
+      "id": 9,
+      "text": "我很容易结交新朋友。",
+      "trait": "E",
+      "is_reverse": false
+    },
+    {
+      "id": 10,
+      "text": "我喜欢参加热闹的活动。",
+      "trait": "E",
+      "is_reverse": false
+    },
+    {
+      "id": 11,
+      "text": "我常带头组织集体活动。",
+      "trait": "E",
+      "is_reverse": false
+    },
+    {
+      "id": 12,
+      "text": "独处太久会让我感到疲惫。",
+      "trait": "E",
+      "is_reverse": false
+    },
+    {
+      "id": 13,
+      "text": "我说话的速度通常很快。",
+      "trait": "E",
+      "is_reverse": false
+    },
+    {
+      "id": 14,
+      "text": "我喜欢充满刺激和冒险的生活。",
+      "trait": "E",
+      "is_reverse": false
+    },
+    {
+      "id": 15,
+      "text": "别人觉得我是一个热情的人。",
+      "trait": "E",
+      "is_reverse": false
+    },
+    {
+      "id": 16,
+      "text": "我不害怕在公众场合发言。",
+      "trait": "E",
+      "is_reverse": false
+    },
+    {
+      "id": 17,
+      "text": "我喜欢在团队中工作，而不是独自工作。",
+      "trait": "E",
+      "is_reverse": false
+    },
+    {
+      "id": 18,
+      "text": "我经常表现得充满自信。",
+      "trait": "E",
+      "is_reverse": false
+    },
+    {
+      "id": 19,
+      "text": "我很难保持安静。",
+      "trait": "E",
+      "is_reverse": false
+    },
+    {
+      "id": 20,
+      "text": "我总是第一个尝试新社交场所的人。",
+      "trait": "E",
+      "is_reverse": false
+    },
+    {
+      "id": 21,
+      "text": "我真诚地关心他人的福祉。",
+      "trait": "A",
+      "is_reverse": false
+    },
+    {
+      "id": 22,
+      "text": "我倾向于相信别人是善良的。",
+      "trait": "A",
+      "is_reverse": false
+    },
+    {
+      "id": 23,
+      "text": "我喜欢帮助他人解决困难。",
+      "trait": "A",
+      "is_reverse": false
+    },
+    {
+      "id": 24,
+      "text": "我很少与人发生激烈的争执。",
+      "trait": "A",
+      "is_reverse": false
+    },
+    {
+      "id": 25,
+      "text": "我很容易原谅曾经伤害我的人。",
+      "trait": "A",
+      "is_reverse": false
+    },
+    {
+      "id": 26,
+      "text": "我是一个富有同情心的人。",
+      "trait": "A",
+      "is_reverse": false
+    },
+    {
+      "id": 27,
+      "text": "我待人礼貌且周到。",
+      "trait": "A",
+      "is_reverse": false
+    },
+    {
+      "id": 28,
+      "text": "我愿意为了团队利益牺牲个人利益。",
+      "trait": "A",
+      "is_reverse": false
+    },
+    {
+      "id": 29,
+      "text": "我不喜欢批评别人。",
+      "trait": "A",
+      "is_reverse": false
+    },
+    {
+      "id": 30,
+      "text": "我擅长察觉他人的情绪变化。",
+      "trait": "A",
+      "is_reverse": false
+    },
+    {
+      "id": 31,
+      "text": "我认为每个人都值得被尊重。",
+      "trait": "A",
+      "is_reverse": false
+    },
+    {
+      "id": 32,
+      "text": "我很少怀疑别人的动机。",
+      "trait": "A",
+      "is_reverse": false
+    },
+    {
+      "id": 33,
+      "text": "朋友们遇到麻烦时总会想到我。",
+      "trait": "A",
+      "is_reverse": false
+    },
+    {
+      "id": 34,
+      "text": "我在团队中扮演\"和事佬\"的角色。",
+      "trait": "A",
+      "is_reverse": false
+    },
+    {
+      "id": 35,
+      "text": "我对他人的痛苦感同身受。",
+      "trait": "A",
+      "is_reverse": false
+    },
+    {
+      "id": 36,
+      "text": "我倾向于给别人第二次机会。",
+      "trait": "A",
+      "is_reverse": false
+    },
+    {
+      "id": 37,
+      "text": "我喜欢通过协作而不是竞争来完成任务。",
+      "trait": "A",
+      "is_reverse": false
+    },
+    {
+      "id": 38,
+      "text": "我很少对人产生敌意。",
+      "trait": "A",
+      "is_reverse": false
+    },
+    {
+      "id": 39,
+      "text": "我愿意花时间做志愿者或公益活动。",
+      "trait": "A",
+      "is_reverse": false
+    },
+    {
+      "id": 40,
+      "text": "我是一个很好的倾听者。",
+      "trait": "A",
+      "is_reverse": false
+    },
+    {
+      "id": 41,
+      "text": "我总是事先做好计划。",
+      "trait": "C",
+      "is_reverse": false
+    },
+    {
+      "id": 42,
+      "text": "我喜欢保持环境整洁有序。",
+      "trait": "C",
+      "is_reverse": false
+    },
+    {
+      "id": 43,
+      "text": "我工作时非常专注，不易分心。",
+      "trait": "C",
+      "is_reverse": false
+    },
+    {
+      "id": 44,
+      "text": "我会按时完成我承诺的所有事情。",
+      "trait": "C",
+      "is_reverse": false
+    },
+    {
+      "id": 45,
+      "text": "我对自己有很高的要求。",
+      "trait": "C",
+      "is_reverse": false
+    },
+    {
+      "id": 46,
+      "text": "我在做决定前会深思熟虑。",
+      "trait": "C",
+      "is_reverse": false
+    },
+    {
+      "id": 47,
+      "text": "我很少拖延任务。",
+      "trait": "C",
+      "is_reverse": false
+    },
+    {
+      "id": 48,
+      "text": "我喜欢把物品归位。",
+      "trait": "C",
+      "is_reverse": false
+    },
+    {
+      "id": 49,
+      "text": "即使没有监督，我也能认真工作。",
+      "trait": "C",
+      "is_reverse": false
+    },
+    {
+      "id": 50,
+      "text": "我做事追求完美。",
+      "trait": "C",
+      "is_reverse": false
+    },
+    {
+      "id": 51,
+      "text": "我有明确的长期人生目标。",
+      "trait": "C",
+      "is_reverse": false
+    },
+    {
+      "id": 52,
+      "text": "我习惯记录待办事项清单。",
+      "trait": "C",
+      "is_reverse": false
+    },
+    {
+      "id": 53,
+      "text": "我被公认为是一个可靠的人。",
+      "trait": "C",
+      "is_reverse": false
+    },
+    {
+      "id": 54,
+      "text": "我认为细节决定成败。",
+      "trait": "C",
+      "is_reverse": false
+    },
+    {
+      "id": 55,
+      "text": "我能够抵御眼前的诱惑以实现远期目标。",
+      "trait": "C",
+      "is_reverse": false
+    },
+    {
+      "id": 56,
+      "text": "我在日常生活中非常有规律。",
+      "trait": "C",
+      "is_reverse": false
+    },
+    {
+      "id": 57,
+      "text": "我总是提前到达预约地点。",
+      "trait": "C",
+      "is_reverse": false
+    },
+    {
+      "id": 58,
+      "text": "我处理财务问题非常谨慎。",
+      "trait": "C",
+      "is_reverse": false
+    },
+    {
+      "id": 59,
+      "text": "我有很强的自我克制能力。",
+      "trait": "C",
+      "is_reverse": false
+    },
+    {
+      "id": 60,
+      "text": "我在执行任务时非常有毅力。",
+      "trait": "C",
+      "is_reverse": false
+    },
+    {
+      "id": 61,
+      "text": "我经常感到压力和焦虑。",
+      "trait": "N",
+      "is_reverse": false
+    },
+    {
+      "id": 62,
+      "text": "我的情绪波动很大。",
+      "trait": "N",
+      "is_reverse": false
+    },
+    {
+      "id": 63,
+      "text": "遇到一点小事我也容易烦恼。",
+      "trait": "N",
+      "is_reverse": false
+    },
+    {
+      "id": 64,
+      "text": "我经常担心事情会变糟。",
+      "trait": "N",
+      "is_reverse": false
+    },
+    {
+      "id": 65,
+      "text": "我很容易感到沮丧或情绪低落。",
+      "trait": "N",
+      "is_reverse": false
+    },
+    {
+      "id": 66,
+      "text": "在压力面前，我很难保持冷静。",
+      "trait": "N",
+      "is_reverse": false
+    },
+    {
+      "id": 67,
+      "text": "我经常觉得力不从心。",
+      "trait": "N",
+      "is_reverse": false
+    },
+    {
+      "id": 68,
+      "text": "我对他人的评价非常敏感。",
+      "trait": "N",
+      "is_reverse": false
+    },
+    {
+      "id": 69,
+      "text": "我容易因为失败而陷入自我怀疑。",
+      "trait": "N",
+      "is_reverse": false
+    },
+    {
+      "id": 70,
+      "text": "我经常失眠，因为在想白天的琐事。",
+      "trait": "N",
+      "is_reverse": false
+    },
+    {
+      "id": 71,
+      "text": "我觉得自己是一个比较敏感的人。",
+      "trait": "N",
+      "is_reverse": false
+    },
+    {
+      "id": 72,
+      "text": "我经常感到孤独或被排斥。",
+      "trait": "N",
+      "is_reverse": false
+    },
+    {
+      "id": 73,
+      "text": "面对紧急情况时，我容易惊慌失措。",
+      "trait": "N",
+      "is_reverse": false
+    },
+    {
+      "id": 74,
+      "text": "我很难从负面情绪中快速走出来。",
+      "trait": "N",
+      "is_reverse": false
+    },
+    {
+      "id": 75,
+      "text": "我经常会有负罪感。",
+      "trait": "N",
+      "is_reverse": false
+    },
+    {
+      "id": 76,
+      "text": "我对环境的变化感到不安。",
+      "trait": "N",
+      "is_reverse": false
+    },
+    {
+      "id": 77,
+      "text": "我偶尔会无缘无故地感到忧郁。",
+      "trait": "N",
+      "is_reverse": false
+    },
+    {
+      "id": 78,
+      "text": "我容易感到害羞或尴尬。",
+      "trait": "N",
+      "is_reverse": false
+    },
+    {
+      "id": 79,
+      "text": "我觉得自己控制不了自己的脾气。",
+      "trait": "N",
+      "is_reverse": false
+    },
+    {
+      "id": 80,
+      "text": "我经常感到精神疲惫。",
+      "trait": "N",
+      "is_reverse": false
+    },
+    {
+      "id": 81,
+      "text": "我对抽象的哲学问题非常感兴趣。",
+      "trait": "O",
+      "is_reverse": false
+    },
+    {
+      "id": 82,
+      "text": "我有丰富的想象力。",
+      "trait": "O",
+      "is_reverse": false
+    },
+    {
+      "id": 83,
+      "text": "我喜欢尝试不同国家的异域美食。",
+      "trait": "O",
+      "is_reverse": false
+    },
+    {
+      "id": 84,
+      "text": "我非常欣赏艺术和诗歌。",
+      "trait": "O",
+      "is_reverse": false
+    },
+    {
+      "id": 85,
+      "text": "我喜欢突破传统，尝试新的做事方式。",
+      "trait": "O",
+      "is_reverse": false
+    },
+    {
+      "id": 86,
+      "text": "我喜欢思考事物的本质，而不是表面。",
+      "trait": "O",
+      "is_reverse": false
+    },
+    {
+      "id": 87,
+      "text": "我经常会有一些奇妙的创意。",
+      "trait": "O",
+      "is_reverse": false
+    },
+    {
+      "id": 88,
+      "text": "我喜欢参观博物馆或艺术展。",
+      "trait": "O",
+      "is_reverse": false
+    },
+    {
+      "id": 89,
+      "text": "我对科技和科学的最新进展充满好奇。",
+      "trait": "O",
+      "is_reverse": false
+    },
+    {
+      "id": 90,
+      "text": "我喜欢看烧脑的电影或书籍。",
+      "trait": "O",
+      "is_reverse": false
+    },
+    {
+      "id": 91,
+      "text": "我喜欢学习不同国家的语言或文化。",
+      "trait": "O",
+      "is_reverse": false
+    },
+    {
+      "id": 92,
+      "text": "我喜欢旅行到陌生的地方。",
+      "trait": "O",
+      "is_reverse": false
+    },
+    {
+      "id": 93,
+      "text": "我认为变化比稳定更有趣。",
+      "trait": "O",
+      "is_reverse": false
+    },
+    {
+      "id": 94,
+      "text": "我常有白日梦或幻想。",
+      "trait": "O",
+      "is_reverse": false
+    },
+    {
+      "id": 95,
+      "text": "我喜欢与人争论复杂的理论问题。",
+      "trait": "O",
+      "is_reverse": false
+    },
+    {
+      "id": 96,
+      "text": "我擅长从不同的角度看问题。",
+      "trait": "O",
+      "is_reverse": false
+    },
+    {
+      "id": 97,
+      "text": "我对世界运作的原理充满渴望。",
+      "trait": "O",
+      "is_reverse": false
+    },
+    {
+      "id": 98,
+      "text": "我倾向于支持激进的变革而非维持现状。",
+      "trait": "O",
+      "is_reverse": false
+    },
+    {
+      "id": 99,
+      "text": "我对自己的内在感受有深刻的体会。",
+      "trait": "O",
+      "is_reverse": false
+    },
+    {
+      "id": 100,
+      "text": "别人认为我是一个特立独行的人。",
+      "trait": "O",
+      "is_reverse": false
+    },
+    {
+      "id": 101,
+      "text": "我在陌生人面前往往比较沉默。",
+      "trait": "E",
+      "is_reverse": true
+    },
+    {
+      "id": 102,
+      "text": "我在派对上通常会躲在角落里。",
+      "trait": "E",
+      "is_reverse": true
+    },
+    {
+      "id": 103,
+      "text": "我更喜欢安静的周末，而不是热闹的聚会。",
+      "trait": "E",
+      "is_reverse": true
+    },
+    {
+      "id": 104,
+      "text": "我认为自己是一个深沉、内敛的人。",
+      "trait": "E",
+      "is_reverse": true
+    },
+    {
+      "id": 105,
+      "text": "在会议中，我通常等别人先发言。",
+      "trait": "E",
+      "is_reverse": true
+    },
+    {
+      "id": 106,
+      "text": "我不喜欢在众人面前展示自己。",
+      "trait": "E",
+      "is_reverse": true
+    },
+    {
+      "id": 107,
+      "text": "社交活动后，我需要大量时间独处来\"充电\"。",
+      "trait": "E",
+      "is_reverse": true
+    },
+    {
+      "id": 108,
+      "text": "我很少主动约人出去玩。",
+      "trait": "E",
+      "is_reverse": true
+    },
+    {
+      "id": 109,
+      "text": "我不喜欢大声喧哗的环境。",
+      "trait": "E",
+      "is_reverse": true
+    },
+    {
+      "id": 110,
+      "text": "我觉得维持广泛的人际关系很累。",
+      "trait": "E",
+      "is_reverse": true
+    },
+    {
+      "id": 111,
+      "text": "我在电话里交流时会感到紧张。",
+      "trait": "E",
+      "is_reverse": true
+    },
+    {
+      "id": 112,
+      "text": "我不太擅长讲笑话或调节气氛。",
+      "trait": "E",
+      "is_reverse": true
+    },
+    {
+      "id": 113,
+      "text": "我更喜欢一对一的深度交流，而不是群体聊天。",
+      "trait": "E",
+      "is_reverse": false
+    },
+    {
+      "id": 114,
+      "text": "我很少表现出极度兴奋的情绪。",
+      "trait": "E",
+      "is_reverse": true
+    },
+    {
+      "id": 115,
+      "text": "我倾向于隐藏自己的热情。",
+      "trait": "E",
+      "is_reverse": true
+    },
+    {
+      "id": 116,
+      "text": "我不喜欢成为团队的领导者。",
+      "trait": "E",
+      "is_reverse": true
+    },
+    {
+      "id": 117,
+      "text": "我觉得生活平淡一点也很好。",
+      "trait": "E",
+      "is_reverse": false
+    },
+    {
+      "id": 118,
+      "text": "我在处理事情时通常比较被动。",
+      "trait": "E",
+      "is_reverse": true
+    },
+    {
+      "id": 119,
+      "text": "我很少被路上的新鲜事吸引。",
+      "trait": "E",
+      "is_reverse": true
+    },
+    {
+      "id": 120,
+      "text": "我不喜欢尝试极限运动或高风险活动。",
+      "trait": "E",
+      "is_reverse": true
+    },
+    {
+      "id": 121,
+      "text": "我有时会利用别人来实现自己的目的。",
+      "trait": "A",
+      "is_reverse": true
+    },
+    {
+      "id": 122,
+      "text": "我觉得大部分人都是自私的。",
+      "trait": "A",
+      "is_reverse": true
+    },
+    {
+      "id": 123,
+      "text": "如果别人对我不利，我会毫不客气地反击。",
+      "trait": "A",
+      "is_reverse": true
+    },
+    {
+      "id": 124,
+      "text": "我认为在生意场上，同情心是多余的。",
+      "trait": "A",
+      "is_reverse": true
+    },
+    {
+      "id": 125,
+      "text": "我经常对别人的求助视而不见。",
+      "trait": "A",
+      "is_reverse": true
+    },
+    {
+      "id": 126,
+      "text": "我不介意为了说服别人而撒点小谎。",
+      "trait": "A",
+      "is_reverse": true
+    },
+    {
+      "id": 127,
+      "text": "我觉得很多人都很愚蠢，这让我烦躁。",
+      "trait": "A",
+      "is_reverse": true
+    },
+    {
+      "id": 128,
+      "text": "我很难对不熟悉的人产生信任。",
+      "trait": "A",
+      "is_reverse": true
+    },
+    {
+      "id": 129,
+      "text": "我有时会故意激怒别人，看他们的反应。",
+      "trait": "A",
+      "is_reverse": true
+    },
+    {
+      "id": 130,
+      "text": "我认为竞争比合作更能激发人的潜力。",
+      "trait": "A",
+      "is_reverse": true
+    },
+    {
+      "id": 131,
+      "text": "我不喜欢对别人点头哈腰。",
+      "trait": "A",
+      "is_reverse": true
+    },
+    {
+      "id": 132,
+      "text": "我很少为流浪猫狗感到难过。",
+      "trait": "A",
+      "is_reverse": true
+    },
+    {
+      "id": 133,
+      "text": "我觉得每个人都应该自己解决问题，而不是靠别人。",
+      "trait": "A",
+      "is_reverse": true
+    },
+    {
+      "id": 134,
+      "text": "我说话比较直，不太考虑别人的感受。",
+      "trait": "A",
+      "is_reverse": true
+    },
+    {
+      "id": 135,
+      "text": "我认为过于善良是软弱的表现。",
+      "trait": "A",
+      "is_reverse": true
+    },
+    {
+      "id": 136,
+      "text": "我会记恨那些得罪过我的人。",
+      "trait": "A",
+      "is_reverse": true
+    },
+    {
+      "id": 137,
+      "text": "我很少参加慈善募捐活动。",
+      "trait": "A",
+      "is_reverse": true
+    },
+    {
+      "id": 138,
+      "text": "我觉得规则就是用来打破的。",
+      "trait": "A",
+      "is_reverse": true
+    },
+    {
+      "id": 139,
+      "text": "我不喜欢随大流。",
+      "trait": "A",
+      "is_reverse": true
+    },
+    {
+      "id": 140,
+      "text": "我认为谦虚有时是一种虚伪。",
+      "trait": "A",
+      "is_reverse": true
+    },
+    {
+      "id": 141,
+      "text": "我经常找不到我的钥匙或重要文件。",
+      "trait": "C",
+      "is_reverse": true
+    },
+    {
+      "id": 142,
+      "text": "我倾向于等到最后一刻才开始做作业或报告。",
+      "trait": "C",
+      "is_reverse": true
+    },
+    {
+      "id": 143,
+      "text": "我觉得制定详细的计划是在浪费时间。",
+      "trait": "C",
+      "is_reverse": true
+    },
+    {
+      "id": 144,
+      "text": "我在工作时经常开小差、刷手机。",
+      "trait": "C",
+      "is_reverse": true
+    },
+    {
+      "id": 145,
+      "text": "我的房间通常比较凌乱。",
+      "trait": "C",
+      "is_reverse": true
+    },
+    {
+      "id": 146,
+      "text": "我经常忘记准时吃药或运动。",
+      "trait": "C",
+      "is_reverse": true
+    },
+    {
+      "id": 147,
+      "text": "我做决策时比较随性，不太考虑后果。",
+      "trait": "C",
+      "is_reverse": true
+    },
+    {
+      "id": 148,
+      "text": "我经常在还没完成一项任务时就跳到下一项。",
+      "trait": "C",
+      "is_reverse": true
+    },
+    {
+      "id": 149,
+      "text": "我觉得准时到达并不是那么重要。",
+      "trait": "C",
+      "is_reverse": true
+    },
+    {
+      "id": 150,
+      "text": "我经常因为粗心大意而犯错。",
+      "trait": "C",
+      "is_reverse": true
+    },
+    {
+      "id": 151,
+      "text": "我比较情绪化地花钱，不爱存钱。",
+      "trait": "C",
+      "is_reverse": true
+    },
+    {
+      "id": 152,
+      "text": "我不喜欢一成不变的日程表。",
+      "trait": "C",
+      "is_reverse": true
+    },
+    {
+      "id": 153,
+      "text": "我经常在工作中\"偷懒\"或摸鱼。",
+      "trait": "C",
+      "is_reverse": true
+    },
+    {
+      "id": 154,
+      "text": "我不怎么关注自己的长期职业规划。",
+      "trait": "C",
+      "is_reverse": true
+    },
+    {
+      "id": 155,
+      "text": "我觉得整理家务是一件非常痛苦的事。",
+      "trait": "C",
+      "is_reverse": true
+    },
+    {
+      "id": 156,
+      "text": "我做事经常有头无尾。",
+      "trait": "C",
+      "is_reverse": true
+    },
+    {
+      "id": 157,
+      "text": "我不喜欢繁琐的流程和规定。",
+      "trait": "C",
+      "is_reverse": true
+    },
+    {
+      "id": 158,
+      "text": "我认为人生应该活在当下，而不是为了未来节制。",
+      "trait": "C",
+      "is_reverse": true
+    },
+    {
+      "id": 159,
+      "text": "我很难保持长期的专注力。",
+      "trait": "C",
+      "is_reverse": true
+    },
+    {
+      "id": 160,
+      "text": "我在面对复杂问题时容易放弃。",
+      "trait": "C",
+      "is_reverse": true
+    },
+    {
+      "id": 161,
+      "text": "即使在压力下，我也能保持冷静。",
+      "trait": "N",
+      "is_reverse": true
+    },
+    {
+      "id": 162,
+      "text": "我很少感到情绪失控。",
+      "trait": "N",
+      "is_reverse": true
+    },
+    {
+      "id": 163,
+      "text": "我不怎么担心那些还没发生的事情。",
+      "trait": "N",
+      "is_reverse": true
+    },
+    {
+      "id": 164,
+      "text": "我对自己充满信心，很少怀疑自己的能力。",
+      "trait": "N",
+      "is_reverse": true
+    },
+    {
+      "id": 165,
+      "text": "失败对我来说只是学习的机会，不会让我沉沦。",
+      "trait": "N",
+      "is_reverse": true
+    },
+    {
+      "id": 166,
+      "text": "我很少感到害羞或局促不安。",
+      "trait": "N",
+      "is_reverse": true
+    },
+    {
+      "id": 167,
+      "text": "我在人多的地方感到很放松。",
+      "trait": "N",
+      "is_reverse": true
+    },
+    {
+      "id": 168,
+      "text": "即使别人批评我，我也能淡然处之。",
+      "trait": "N",
+      "is_reverse": true
+    },
+    {
+      "id": 169,
+      "text": "我入睡很快，很少失眠。",
+      "trait": "N",
+      "is_reverse": true
+    },
+    {
+      "id": 170,
+      "text": "我的情绪非常稳定，像岩石一样。",
+      "trait": "N",
+      "is_reverse": true
+    },
+    {
+      "id": 171,
+      "text": "我不容易被激怒。",
+      "trait": "N",
+      "is_reverse": true
+    },
+    {
+      "id": 172,
+      "text": "即使遇到紧急情况，我也知道该做什么。",
+      "trait": "N",
+      "is_reverse": true
+    },
+    {
+      "id": 173,
+      "text": "我不觉得自己比别人差。",
+      "trait": "N",
+      "is_reverse": true
+    },
+    {
+      "id": 174,
+      "text": "我很少感到孤单。",
+      "trait": "N",
+      "is_reverse": true
+    },
+    {
+      "id": 175,
+      "text": "我不会为了过去做错的事纠结太久。",
+      "trait": "N",
+      "is_reverse": true
+    },
+    {
+      "id": 176,
+      "text": "我觉得世界大体上是安全的。",
+      "trait": "N",
+      "is_reverse": true
+    },
+    {
+      "id": 177,
+      "text": "即使在艰难时期，我也能保持乐观。",
+      "trait": "N",
+      "is_reverse": true
+    },
+    {
+      "id": 178,
+      "text": "我很少有那种\"心跳加速、不知所措\"的感觉。",
+      "trait": "N",
+      "is_reverse": true
+    },
+    {
+      "id": 179,
+      "text": "我对自己目前的生活状态很满意。",
+      "trait": "N",
+      "is_reverse": true
+    },
+    {
+      "id": 180,
+      "text": "我不容易被悲伤的电影或歌曲影响。",
+      "trait": "N",
+      "is_reverse": true
+    },
+    {
+      "id": 181,
+      "text": "我不喜欢那些虚无缥缈的现代艺术。",
+      "trait": "O",
+      "is_reverse": true
+    },
+    {
+      "id": 182,
+      "text": "我更喜欢看实用的技术类书籍，而不是科幻小说。",
+      "trait": "O",
+      "is_reverse": true
+    },
+    {
+      "id": 183,
+      "text": "我觉得遵守传统是很重要的。",
+      "trait": "O",
+      "is_reverse": true
+    },
+    {
+      "id": 184,
+      "text": "我不喜欢改变我已经习惯了的饮食。",
+      "trait": "O",
+      "is_reverse": true
+    },
+    {
+      "id": 185,
+      "text": "我认为过于丰富的想象力会影响现实生活。",
+      "trait": "O",
+      "is_reverse": true
+    },
+    {
+      "id": 186,
+      "text": "我对哲学和理论讨论感到厌倦。",
+      "trait": "O",
+      "is_reverse": true
+    },
+    {
+      "id": 187,
+      "text": "我更喜欢去熟悉的景点旅游，而不是冒险。",
+      "trait": "O",
+      "is_reverse": true
+    },
+    {
+      "id": 188,
+      "text": "我觉得大多数所谓的\"创新\"只是噱头。",
+      "trait": "O",
+      "is_reverse": true
+    },
+    {
+      "id": 189,
+      "text": "我不喜欢思考太复杂的人生意义。",
+      "trait": "O",
+      "is_reverse": true
+    },
+    {
+      "id": 190,
+      "text": "我认为科学比艺术更重要。",
+      "trait": "O",
+      "is_reverse": true
+    },
+    {
+      "id": 191,
+      "text": "我很难理解抽象派的画作。",
+      "trait": "O",
+      "is_reverse": true
+    },
+    {
+      "id": 192,
+      "text": "我喜欢按部就班的工作模式。",
+      "trait": "O",
+      "is_reverse": true
+    },
+    {
+      "id": 193,
+      "text": "我不关心其他国家的政治和文化。",
+      "trait": "O",
+      "is_reverse": true
+    },
+    {
+      "id": 194,
+      "text": "我觉得诗歌既难懂又没实际用途。",
+      "trait": "O",
+      "is_reverse": true
+    },
+    {
+      "id": 195,
+      "text": "我倾向于使用已经证明有效的旧方法。",
+      "trait": "O",
+      "is_reverse": true
+    },
+    {
+      "id": 196,
+      "text": "我很少有\"灵光一闪\"的时刻。",
+      "trait": "O",
+      "is_reverse": true
+    },
+    {
+      "id": 197,
+      "text": "我觉得生活中的仪式感没有必要。",
+      "trait": "O",
+      "is_reverse": true
+    },
+    {
+      "id": 198,
+      "text": "我不喜欢深究那些没有明确答案的问题。",
+      "trait": "O",
+      "is_reverse": true
+    },
+    {
+      "id": 199,
+      "text": "我认为人应该脚踏实地，不要总是做梦。",
+      "trait": "O",
+      "is_reverse": true
+    },
+    {
+      "id": 200,
+      "text": "我对新奇的玩意儿通常持怀疑态度。",
+      "trait": "O",
+      "is_reverse": true
+    }
+  ],
+  "cities": [
+    {
+      "id": 1,
+      "name": "纽约",
+      "country": "美国",
+      "description": "永不停歇的能量之都，外向者的天堂。",
+      "image_url": "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=800",
+      "trait_o": 0.92,
+      "trait_c": 0.65,
+      "trait_e": 0.88,
+      "trait_a": 0.42,
+      "trait_n": 0.78
+    },
+    {
+      "id": 2,
+      "name": "伦敦",
+      "country": "英国",
+      "description": "历史与现代交融的国际大都会。",
+      "image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800",
+      "trait_o": 0.89,
+      "trait_c": 0.72,
+      "trait_e": 0.82,
+      "trait_a": 0.55,
+      "trait_n": 0.65
+    },
+    {
+      "id": 3,
+      "name": "东京",
+      "country": "日本",
+      "description": "秩序与效率的极致体现。",
+      "image_url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800",
+      "trait_o": 0.68,
+      "trait_c": 0.95,
+      "trait_e": 0.45,
+      "trait_a": 0.62,
+      "trait_n": 0.74
+    },
+    {
+      "id": 4,
+      "name": "新加坡",
+      "country": "新加坡",
+      "description": "花园城市，高效有序的典范。",
+      "image_url": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=800",
+      "trait_o": 0.62,
+      "trait_c": 0.98,
+      "trait_e": 0.58,
+      "trait_a": 0.68,
+      "trait_n": 0.55
+    },
+    {
+      "id": 5,
+      "name": "巴黎",
+      "country": "法国",
+      "description": "浪漫与艺术的代名词。",
+      "image_url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800",
+      "trait_o": 0.94,
+      "trait_c": 0.58,
+      "trait_e": 0.75,
+      "trait_a": 0.48,
+      "trait_n": 0.72
+    },
+    {
+      "id": 6,
+      "name": "柏林",
+      "country": "德国",
+      "description": "创意与自由的文化熔炉。",
+      "image_url": "https://images.unsplash.com/photo-1560969184-10fe8719e047?w=800",
+      "trait_o": 0.96,
+      "trait_c": 0.62,
+      "trait_e": 0.72,
+      "trait_a": 0.52,
+      "trait_n": 0.58
+    },
+    {
+      "id": 7,
+      "name": "旧金山",
+      "country": "美国",
+      "description": "科技创新的摇篮。",
+      "image_url": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800",
+      "trait_o": 0.98,
+      "trait_c": 0.55,
+      "trait_e": 0.84,
+      "trait_a": 0.6,
+      "trait_n": 0.52
+    },
+    {
+      "id": 8,
+      "name": "里约热内卢",
+      "country": "巴西",
+      "description": "热情奔放的海滨之城。",
+      "image_url": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=800",
+      "trait_o": 0.78,
+      "trait_c": 0.42,
+      "trait_e": 0.96,
+      "trait_a": 0.85,
+      "trait_n": 0.48
+    },
+    {
+      "id": 9,
+      "name": "多伦多",
+      "country": "加拿大",
+      "description": "多元文化的和谐典范。",
+      "image_url": "https://images.unsplash.com/photo-1517935706615-2717063c2225?w=800",
+      "trait_o": 0.82,
+      "trait_c": 0.78,
+      "trait_e": 0.72,
+      "trait_a": 0.92,
+      "trait_n": 0.42
+    },
+    {
+      "id": 10,
+      "name": "苏黎世",
+      "country": "瑞士",
+      "description": "精准与品质的象征。",
+      "image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+      "trait_o": 0.65,
+      "trait_c": 0.94,
+      "trait_e": 0.52,
+      "trait_a": 0.7,
+      "trait_n": 0.38
+    },
+    {
+      "id": 11,
+      "name": "哥本哈根",
+      "country": "丹麦",
+      "description": "幸福指数最高的城市之一。",
+      "image_url": "https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?w=800",
+      "trait_o": 0.85,
+      "trait_c": 0.82,
+      "trait_e": 0.68,
+      "trait_a": 0.95,
+      "trait_n": 0.32
+    },
+    {
+      "id": 12,
+      "name": "墨尔本",
+      "country": "澳大利亚",
+      "description": "宜居城市的代表。",
+      "image_url": "https://images.unsplash.com/photo-1514395462725-fb4566210144?w=800",
+      "trait_o": 0.88,
+      "trait_c": 0.75,
+      "trait_e": 0.8,
+      "trait_a": 0.88,
+      "trait_n": 0.4
+    },
+    {
+      "id": 13,
+      "name": "孟买",
+      "country": "印度",
+      "description": "充满活力的商业中心。",
+      "image_url": "https://images.unsplash.com/photo-1566552881560-0be862a7c445?w=800",
+      "trait_o": 0.72,
+      "trait_c": 0.68,
+      "trait_e": 0.92,
+      "trait_a": 0.78,
+      "trait_n": 0.62
+    },
+    {
+      "id": 14,
+      "name": "首尔",
+      "country": "韩国",
+      "description": "传统与现代的完美融合。",
+      "image_url": "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=800",
+      "trait_o": 0.7,
+      "trait_c": 0.92,
+      "trait_e": 0.65,
+      "trait_a": 0.58,
+      "trait_n": 0.82
+    },
+    {
+      "id": 15,
+      "name": "巴塞罗那",
+      "country": "西班牙",
+      "description": "艺术与建筑的天堂。",
+      "image_url": "https://images.unsplash.com/photo-1562883676-8c7feb83f09b?w=800",
+      "trait_o": 0.88,
+      "trait_c": 0.52,
+      "trait_e": 0.94,
+      "trait_a": 0.75,
+      "trait_n": 0.55
+    },
+    {
+      "id": 16,
+      "name": "阿姆斯特丹",
+      "country": "荷兰",
+      "description": "自由与包容的象征。",
+      "image_url": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=800",
+      "trait_o": 0.95,
+      "trait_c": 0.68,
+      "trait_e": 0.82,
+      "trait_a": 0.78,
+      "trait_n": 0.45
+    },
+    {
+      "id": 17,
+      "name": "迪拜",
+      "country": "阿联酋",
+      "description": "奢华与野心的代名词。",
+      "image_url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800",
+      "trait_o": 0.75,
+      "trait_c": 0.88,
+      "trait_e": 0.85,
+      "trait_a": 0.52,
+      "trait_n": 0.48
+    },
+    {
+      "id": 18,
+      "name": "墨西哥城",
+      "country": "墨西哥",
+      "description": "古老文明与现代活力的交汇。",
+      "image_url": "https://images.unsplash.com/photo-1518659526054-e6d9a3c0e8b0?w=800",
+      "trait_o": 0.74,
+      "trait_c": 0.55,
+      "trait_e": 0.94,
+      "trait_a": 0.88,
+      "trait_n": 0.58
+    },
+    {
+      "id": 19,
+      "name": "斯德哥尔摩",
+      "country": "瑞典",
+      "description": "北欧设计的发源地。",
+      "image_url": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?w=800",
+      "trait_o": 0.82,
+      "trait_c": 0.85,
+      "trait_e": 0.58,
+      "trait_a": 0.82,
+      "trait_n": 0.35
+    },
+    {
+      "id": 20,
+      "name": "曼谷",
+      "country": "泰国",
+      "description": "微笑之国的热情首都。",
+      "image_url": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=800",
+      "trait_o": 0.72,
+      "trait_c": 0.58,
+      "trait_e": 0.88,
+      "trait_a": 0.9,
+      "trait_n": 0.52
+    },
+    {
+      "id": 21,
+      "name": "北京",
+      "country": "中国",
+      "description": "古都与现代化的结合。",
+      "image_url": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800",
+      "trait_o": 0.72,
+      "trait_c": 0.94,
+      "trait_e": 0.52,
+      "trait_a": 0.58,
+      "trait_n": 0.88
+    },
+    {
+      "id": 22,
+      "name": "上海",
+      "country": "中国",
+      "description": "东方明珠，国际金融中心。",
+      "image_url": "https://images.unsplash.com/photo-1537981576259-a7f6e15f6a5b?w=800",
+      "trait_o": 0.8,
+      "trait_c": 0.92,
+      "trait_e": 0.65,
+      "trait_a": 0.52,
+      "trait_n": 0.85
+    },
+    {
+      "id": 23,
+      "name": "香港",
+      "country": "中国",
+      "description": "东西方文化的交汇点。",
+      "image_url": "https://images.unsplash.com/photo-1536599018102-9f803c140fc1?w=800",
+      "trait_o": 0.78,
+      "trait_c": 0.88,
+      "trait_e": 0.7,
+      "trait_a": 0.45,
+      "trait_n": 0.9
+    },
+    {
+      "id": 24,
+      "name": "台北",
+      "country": "中国",
+      "description": "温暖友善的宝岛之都。",
+      "image_url": "https://images.unsplash.com/photo-1540960149-8f94d5e23c0c?w=800",
+      "trait_o": 0.82,
+      "trait_c": 0.8,
+      "trait_e": 0.62,
+      "trait_a": 0.85,
+      "trait_n": 0.58
+    },
+    {
+      "id": 25,
+      "name": "大阪",
+      "country": "日本",
+      "description": "美食与商业的天堂。",
+      "image_url": "https://images.unsplash.com/photo-1590559899731-a382839e5549?w=800",
+      "trait_o": 0.65,
+      "trait_c": 0.96,
+      "trait_e": 0.55,
+      "trait_a": 0.68,
+      "trait_n": 0.7
+    },
+    {
+      "id": 26,
+      "name": "京都",
+      "country": "日本",
+      "description": "千年古都，禅意之城。",
+      "image_url": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800",
+      "trait_o": 0.9,
+      "trait_c": 0.85,
+      "trait_e": 0.38,
+      "trait_a": 0.72,
+      "trait_n": 0.45
+    },
+    {
+      "id": 27,
+      "name": "胡志明市",
+      "country": "越南",
+      "description": "充满活力的东南亚新星。",
+      "image_url": "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=800",
+      "trait_o": 0.68,
+      "trait_c": 0.75,
+      "trait_e": 0.92,
+      "trait_a": 0.8,
+      "trait_n": 0.48
+    },
+    {
+      "id": 28,
+      "name": "马尼拉",
+      "country": "菲律宾",
+      "description": "热情好客的岛国首都。",
+      "image_url": "https://images.unsplash.com/photo-1580655653885-65763b2597d0?w=800",
+      "trait_o": 0.6,
+      "trait_c": 0.65,
+      "trait_e": 0.95,
+      "trait_a": 0.92,
+      "trait_n": 0.55
+    },
+    {
+      "id": 29,
+      "name": "雅加达",
+      "country": "印度尼西亚",
+      "description": "千岛之国的门户。",
+      "image_url": "https://images.unsplash.com/photo-1555899434-94d1526a7ae0?w=800",
+      "trait_o": 0.58,
+      "trait_c": 0.7,
+      "trait_e": 0.88,
+      "trait_a": 0.85,
+      "trait_n": 0.62
+    },
+    {
+      "id": 30,
+      "name": "吉隆坡",
+      "country": "马来西亚",
+      "description": "多元文化的和谐共存。",
+      "image_url": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=800",
+      "trait_o": 0.65,
+      "trait_c": 0.82,
+      "trait_e": 0.78,
+      "trait_a": 0.75,
+      "trait_n": 0.52
+    },
+    {
+      "id": 31,
+      "name": "新德里",
+      "country": "印度",
+      "description": "古老与现代的碰撞。",
+      "image_url": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800",
+      "trait_o": 0.7,
+      "trait_c": 0.72,
+      "trait_e": 0.9,
+      "trait_a": 0.75,
+      "trait_n": 0.68
+    },
+    {
+      "id": 32,
+      "name": "班加罗尔",
+      "country": "印度",
+      "description": "印度硅谷。",
+      "image_url": "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?w=800",
+      "trait_o": 0.88,
+      "trait_c": 0.78,
+      "trait_e": 0.82,
+      "trait_a": 0.68,
+      "trait_n": 0.55
+    },
+    {
+      "id": 33,
+      "name": "特拉维夫",
+      "country": "以色列",
+      "description": "创新与活力的代名词。",
+      "image_url": "https://images.unsplash.com/photo-1590856029826-c7a73142bbf1?w=800",
+      "trait_o": 0.92,
+      "trait_c": 0.68,
+      "trait_e": 0.85,
+      "trait_a": 0.55,
+      "trait_n": 0.72
+    },
+    {
+      "id": 34,
+      "name": "利雅得",
+      "country": "沙特阿拉伯",
+      "description": "沙漠中的现代奇迹。",
+      "image_url": "https://images.unsplash.com/photo-1591608971362-f08b2a75731a?w=800",
+      "trait_o": 0.52,
+      "trait_c": 0.9,
+      "trait_e": 0.6,
+      "trait_a": 0.65,
+      "trait_n": 0.48
+    },
+    {
+      "id": 35,
+      "name": "阿布扎比",
+      "country": "阿联酋",
+      "description": "石油之都的华丽转型。",
+      "image_url": "https://images.unsplash.com/photo-1512632578888-169bbbc64f33?w=800",
+      "trait_o": 0.65,
+      "trait_c": 0.95,
+      "trait_e": 0.7,
+      "trait_a": 0.6,
+      "trait_n": 0.42
+    },
+    {
+      "id": 36,
+      "name": "多哈",
+      "country": "卡塔尔",
+      "description": "海湾明珠。",
+      "image_url": "https://images.unsplash.com/photo-1570939274717-7eda259b50ed?w=800",
+      "trait_o": 0.62,
+      "trait_c": 0.92,
+      "trait_e": 0.68,
+      "trait_a": 0.58,
+      "trait_n": 0.45
+    },
+    {
+      "id": 37,
+      "name": "伊斯坦布尔",
+      "country": "土耳其",
+      "description": "横跨欧亚的千年古城。",
+      "image_url": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800",
+      "trait_o": 0.85,
+      "trait_c": 0.65,
+      "trait_e": 0.92,
+      "trait_a": 0.7,
+      "trait_n": 0.68
+    },
+    {
+      "id": 38,
+      "name": "罗马",
+      "country": "意大利",
+      "description": "永恒之城。",
+      "image_url": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800",
+      "trait_o": 0.82,
+      "trait_c": 0.45,
+      "trait_e": 0.9,
+      "trait_a": 0.75,
+      "trait_n": 0.62
+    },
+    {
+      "id": 39,
+      "name": "米兰",
+      "country": "意大利",
+      "description": "时尚与设计之都。",
+      "image_url": "https://images.unsplash.com/photo-1513581166391-887a96ddeafd?w=800",
+      "trait_o": 0.78,
+      "trait_c": 0.82,
+      "trait_e": 0.8,
+      "trait_a": 0.52,
+      "trait_n": 0.7
+    },
+    {
+      "id": 40,
+      "name": "马德里",
+      "country": "西班牙",
+      "description": "热情奔放的伊比利亚之心。",
+      "image_url": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=800",
+      "trait_o": 0.85,
+      "trait_c": 0.55,
+      "trait_e": 0.94,
+      "trait_a": 0.78,
+      "trait_n": 0.52
+    },
+    {
+      "id": 41,
+      "name": "里斯本",
+      "country": "葡萄牙",
+      "description": "大西洋边的浪漫之城。",
+      "image_url": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=800",
+      "trait_o": 0.88,
+      "trait_c": 0.58,
+      "trait_e": 0.85,
+      "trait_a": 0.82,
+      "trait_n": 0.48
+    },
+    {
+      "id": 42,
+      "name": "维也纳",
+      "country": "奥地利",
+      "description": "音乐之都。",
+      "image_url": "https://images.unsplash.com/photo-1516550893923-42d28e5677af?w=800",
+      "trait_o": 0.85,
+      "trait_c": 0.88,
+      "trait_e": 0.62,
+      "trait_a": 0.75,
+      "trait_n": 0.55
+    },
+    {
+      "id": 43,
+      "name": "布拉格",
+      "country": "捷克",
+      "description": "百塔之城。",
+      "image_url": "https://images.unsplash.com/photo-1541849546-216549ae216d?w=800",
+      "trait_o": 0.8,
+      "trait_c": 0.72,
+      "trait_e": 0.65,
+      "trait_a": 0.68,
+      "trait_n": 0.58
+    },
+    {
+      "id": 44,
+      "name": "布达佩斯",
+      "country": "匈牙利",
+      "description": "多瑙河上的明珠。",
+      "image_url": "https://images.unsplash.com/photo-1541849546-216549ae216d?w=800",
+      "trait_o": 0.75,
+      "trait_c": 0.7,
+      "trait_e": 0.68,
+      "trait_a": 0.62,
+      "trait_n": 0.65
+    },
+    {
+      "id": 45,
+      "name": "华沙",
+      "country": "波兰",
+      "description": "浴火重生的凤凰之城。",
+      "image_url": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800",
+      "trait_o": 0.72,
+      "trait_c": 0.85,
+      "trait_e": 0.6,
+      "trait_a": 0.58,
+      "trait_n": 0.72
+    },
+    {
+      "id": 46,
+      "name": "雅典",
+      "country": "希腊",
+      "description": "西方文明的摇篮。",
+      "image_url": "https://images.unsplash.com/photo-1555993539-1732b0258235?w=800",
+      "trait_o": 0.82,
+      "trait_c": 0.48,
+      "trait_e": 0.88,
+      "trait_a": 0.72,
+      "trait_n": 0.75
+    },
+    {
+      "id": 47,
+      "name": "都柏林",
+      "country": "爱尔兰",
+      "description": "文学与音乐之都。",
+      "image_url": "https://images.unsplash.com/photo-1549918864-48ac978761a4?w=800",
+      "trait_o": 0.78,
+      "trait_c": 0.65,
+      "trait_e": 0.92,
+      "trait_a": 0.88,
+      "trait_n": 0.52
+    },
+    {
+      "id": 48,
+      "name": "奥斯陆",
+      "country": "挪威",
+      "description": "峡湾之城。",
+      "image_url": "https://images.unsplash.com/photo-1513519245088-0e12902e35ca?w=800",
+      "trait_o": 0.82,
+      "trait_c": 0.88,
+      "trait_e": 0.55,
+      "trait_a": 0.9,
+      "trait_n": 0.35
+    },
+    {
+      "id": 49,
+      "name": "赫尔辛基",
+      "country": "芬兰",
+      "description": "设计之都。",
+      "image_url": "https://images.unsplash.com/photo-1517639493569-5666a7556f98?w=800",
+      "trait_o": 0.85,
+      "trait_c": 0.9,
+      "trait_e": 0.5,
+      "trait_a": 0.94,
+      "trait_n": 0.32
+    },
+    {
+      "id": 50,
+      "name": "布鲁塞尔",
+      "country": "比利时",
+      "description": "欧洲首都。",
+      "image_url": "https://images.unsplash.com/photo-1559113202-c916b8e44373?w=800",
+      "trait_o": 0.8,
+      "trait_c": 0.75,
+      "trait_e": 0.72,
+      "trait_a": 0.78,
+      "trait_n": 0.55
+    },
+    {
+      "id": 51,
+      "name": "慕尼黑",
+      "country": "德国",
+      "description": "啤酒与科技的完美结合。",
+      "image_url": "https://images.unsplash.com/photo-1595867818082-083862f3d630?w=800",
+      "trait_o": 0.75,
+      "trait_c": 0.94,
+      "trait_e": 0.7,
+      "trait_a": 0.68,
+      "trait_n": 0.42
+    },
+    {
+      "id": 52,
+      "name": "法兰克福",
+      "country": "德国",
+      "description": "欧洲金融中心。",
+      "image_url": "https://images.unsplash.com/photo-1541108564332-85d31c5e1c3e?w=800",
+      "trait_o": 0.7,
+      "trait_c": 0.96,
+      "trait_e": 0.68,
+      "trait_a": 0.55,
+      "trait_n": 0.58
+    },
+    {
+      "id": 53,
+      "name": "洛杉矶",
+      "country": "美国",
+      "description": "天使之城，娱乐之都。",
+      "image_url": "https://images.unsplash.com/photo-1534190239940-9ba8944ea261?w=800",
+      "trait_o": 0.95,
+      "trait_c": 0.52,
+      "trait_e": 0.92,
+      "trait_a": 0.65,
+      "trait_n": 0.6
+    },
+    {
+      "id": 54,
+      "name": "芝加哥",
+      "country": "美国",
+      "description": "风城，建筑之都。",
+      "image_url": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800",
+      "trait_o": 0.78,
+      "trait_c": 0.82,
+      "trait_e": 0.85,
+      "trait_a": 0.68,
+      "trait_n": 0.68
+    },
+    {
+      "id": 55,
+      "name": "迈阿密",
+      "country": "美国",
+      "description": "阳光海滩的热情之城。",
+      "image_url": "https://images.unsplash.com/photo-1506966953602-c20cc11f75e3?w=800",
+      "trait_o": 0.75,
+      "trait_c": 0.48,
+      "trait_e": 0.98,
+      "trait_a": 0.72,
+      "trait_n": 0.55
+    },
+    {
+      "id": 56,
+      "name": "西雅图",
+      "country": "美国",
+      "description": "翡翠之城，科技重镇。",
+      "image_url": "https://images.unsplash.com/photo-1502175353174-a7a70e73b362?w=800",
+      "trait_o": 0.96,
+      "trait_c": 0.68,
+      "trait_e": 0.58,
+      "trait_a": 0.75,
+      "trait_n": 0.62
+    },
+    {
+      "id": 57,
+      "name": "波士顿",
+      "country": "美国",
+      "description": "学术与历史的交汇。",
+      "image_url": "https://images.unsplash.com/photo-1554755393-b5e4c6e6c5d7?w=800",
+      "trait_o": 0.92,
+      "trait_c": 0.85,
+      "trait_e": 0.65,
+      "trait_a": 0.6,
+      "trait_n": 0.72
+    },
+    {
+      "id": 58,
+      "name": "华盛顿特区",
+      "country": "美国",
+      "description": "权力中心。",
+      "image_url": "https://images.unsplash.com/photo-1617581629397-a72507c3de9e?w=800",
+      "trait_o": 0.82,
+      "trait_c": 0.9,
+      "trait_e": 0.72,
+      "trait_a": 0.55,
+      "trait_n": 0.78
+    },
+    {
+      "id": 59,
+      "name": "温哥华",
+      "country": "加拿大",
+      "description": "山海之间的宜居之城。",
+      "image_url": "https://images.unsplash.com/photo-1559511260-66a654ae982a?w=800",
+      "trait_o": 0.9,
+      "trait_c": 0.75,
+      "trait_e": 0.68,
+      "trait_a": 0.92,
+      "trait_n": 0.4
+    },
+    {
+      "id": 60,
+      "name": "蒙特利尔",
+      "country": "加拿大",
+      "description": "北美小巴黎。",
+      "image_url": "https://images.unsplash.com/photo-1519659528534-7fd733a832a0?w=800",
+      "trait_o": 0.94,
+      "trait_c": 0.62,
+      "trait_e": 0.82,
+      "trait_a": 0.85,
+      "trait_n": 0.52
+    },
+    {
+      "id": 61,
+      "name": "奥斯汀",
+      "country": "美国",
+      "description": "音乐之城，科技新星。",
+      "image_url": "https://images.unsplash.com/photo-1531218150217-54595bc2b934?w=800",
+      "trait_o": 0.92,
+      "trait_c": 0.65,
+      "trait_e": 0.88,
+      "trait_a": 0.82,
+      "trait_n": 0.45
+    },
+    {
+      "id": 62,
+      "name": "亚特兰大",
+      "country": "美国",
+      "description": "南方门户。",
+      "image_url": "https://images.unsplash.com/photo-1526404423060-c3e5f8e5e2e8?w=800",
+      "trait_o": 0.75,
+      "trait_c": 0.72,
+      "trait_e": 0.88,
+      "trait_a": 0.78,
+      "trait_n": 0.58
+    },
+    {
+      "id": 63,
+      "name": "圣保罗",
+      "country": "巴西",
+      "description": "南美经济引擎。",
+      "image_url": "https://images.unsplash.com/photo-1548963670-aaaa8f73a5e3?w=800",
+      "trait_o": 0.82,
+      "trait_c": 0.55,
+      "trait_e": 0.95,
+      "trait_a": 0.75,
+      "trait_n": 0.65
+    },
+    {
+      "id": 64,
+      "name": "布宜诺斯艾利斯",
+      "country": "阿根廷",
+      "description": "南美巴黎。",
+      "image_url": "https://images.unsplash.com/photo-1589909202802-8f4aadce1849?w=800",
+      "trait_o": 0.9,
+      "trait_c": 0.5,
+      "trait_e": 0.92,
+      "trait_a": 0.68,
+      "trait_n": 0.78
+    },
+    {
+      "id": 65,
+      "name": "圣地亚哥",
+      "country": "智利",
+      "description": "安第斯山下的现代之城。",
+      "image_url": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=800",
+      "trait_o": 0.78,
+      "trait_c": 0.78,
+      "trait_e": 0.72,
+      "trait_a": 0.75,
+      "trait_n": 0.52
+    },
+    {
+      "id": 66,
+      "name": "波哥大",
+      "country": "哥伦比亚",
+      "description": "高原之城。",
+      "image_url": "https://images.unsplash.com/photo-1568632234157-ce7aecd03d0d?w=800",
+      "trait_o": 0.72,
+      "trait_c": 0.62,
+      "trait_e": 0.9,
+      "trait_a": 0.82,
+      "trait_n": 0.65
+    },
+    {
+      "id": 67,
+      "name": "利马",
+      "country": "秘鲁",
+      "description": "太平洋边的古老之城。",
+      "image_url": "https://images.unsplash.com/photo-1531968455001-5c5272a41129?w=800",
+      "trait_o": 0.68,
+      "trait_c": 0.68,
+      "trait_e": 0.85,
+      "trait_a": 0.8,
+      "trait_n": 0.58
+    },
+    {
+      "id": 68,
+      "name": "库斯科",
+      "country": "秘鲁",
+      "description": "印加帝国的心脏。",
+      "image_url": "https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=800",
+      "trait_o": 0.85,
+      "trait_c": 0.58,
+      "trait_e": 0.78,
+      "trait_a": 0.9,
+      "trait_n": 0.42
+    },
+    {
+      "id": 69,
+      "name": "悉尼",
+      "country": "澳大利亚",
+      "description": "海港之城。",
+      "image_url": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=800",
+      "trait_o": 0.88,
+      "trait_c": 0.78,
+      "trait_e": 0.85,
+      "trait_a": 0.82,
+      "trait_n": 0.45
+    },
+    {
+      "id": 70,
+      "name": "奥克兰",
+      "country": "新西兰",
+      "description": "帆船之都。",
+      "image_url": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=800",
+      "trait_o": 0.85,
+      "trait_c": 0.82,
+      "trait_e": 0.78,
+      "trait_a": 0.95,
+      "trait_n": 0.38
+    },
+    {
+      "id": 71,
+      "name": "开普敦",
+      "country": "南非",
+      "description": "彩虹之国的明珠。",
+      "image_url": "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=800",
+      "trait_o": 0.92,
+      "trait_c": 0.65,
+      "trait_e": 0.88,
+      "trait_a": 0.8,
+      "trait_n": 0.48
+    },
+    {
+      "id": 72,
+      "name": "约翰内斯堡",
+      "country": "南非",
+      "description": "黄金之城。",
+      "image_url": "https://images.unsplash.com/photo-1577948000111-9c970dfe3743?w=800",
+      "trait_o": 0.78,
+      "trait_c": 0.72,
+      "trait_e": 0.82,
+      "trait_a": 0.65,
+      "trait_n": 0.68
+    },
+    {
+      "id": 73,
+      "name": "开罗",
+      "country": "埃及",
+      "description": "千年古都。",
+      "image_url": "https://images.unsplash.com/photo-1572252009286-268acec5ca0a?w=800",
+      "trait_o": 0.65,
+      "trait_c": 0.58,
+      "trait_e": 0.94,
+      "trait_a": 0.78,
+      "trait_n": 0.72
+    },
+    {
+      "id": 74,
+      "name": "内罗毕",
+      "country": "肯尼亚",
+      "description": "东非门户。",
+      "image_url": "https://images.unsplash.com/photo-1611348524140-53c9a25263d6?w=800",
+      "trait_o": 0.75,
+      "trait_c": 0.7,
+      "trait_e": 0.88,
+      "trait_a": 0.82,
+      "trait_n": 0.55
+    },
+    {
+      "id": 75,
+      "name": "拉各斯",
+      "country": "尼日利亚",
+      "description": "西非经济中心。",
+      "image_url": "https://images.unsplash.com/photo-1609790966787-8c1b6108f5e3?w=800",
+      "trait_o": 0.8,
+      "trait_c": 0.62,
+      "trait_e": 0.96,
+      "trait_a": 0.72,
+      "trait_n": 0.65
+    }
+  ]
+}
