@@ -1,26 +1,11 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
 
 export default function LandingPage({ onStart }) {
-  const [loading, setLoading] = useState(false);
-
-  const handleModeSelect = async (mode) => {
-    setLoading(true);
-    try {
-      await fetch("/api/set-mode", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ mode }),
-      });
-      onStart();
-    } catch {
-      setLoading(false);
-    }
-  };
 
   const modes = [
     { id: "lite", name: "轻量版", desc: "10 道题 · 5 个城市", time: "2 分钟" },
-    { id: "advanced", name: "进阶版", desc: "50 道题 · 75 个城市", time: "8 分钟" },
+    { id: "advanced", name: "进阶版", desc: "30 道题 · 75 个城市", time: "5 分钟" },
+    { id: "professional", name: "专业版", desc: "60 道题 · 75 个城市", time: "10 分钟" },
     { id: "full", name: "完整版", desc: "200 道题 · 75 个城市", time: "30 分钟" },
   ];
 
@@ -50,13 +35,12 @@ export default function LandingPage({ onStart }) {
 
         <div className="mb-6 flex flex-col gap-3">
           {modes.map((mode) => (
-            <motion.button
+            <motion.a
               key={mode.id}
+              href={`/?mode=${mode.id}`}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              onClick={() => handleModeSelect(mode.id)}
-              disabled={loading}
-              className="rounded-xl border border-indigo-500/30 bg-slate-900/50 px-6 py-4 text-left backdrop-blur transition-all hover:border-indigo-500 hover:bg-slate-800/50 disabled:opacity-50"
+              className="block rounded-xl border border-indigo-500/30 bg-slate-900/50 px-6 py-4 text-left backdrop-blur transition-all hover:border-indigo-500 hover:bg-slate-800/50 no-underline"
             >
               <div className="flex items-center justify-between">
                 <div>
@@ -65,7 +49,7 @@ export default function LandingPage({ onStart }) {
                 </div>
                 <div className="text-xs text-indigo-400">{mode.time}</div>
               </div>
-            </motion.button>
+            </motion.a>
           ))}
         </div>
 

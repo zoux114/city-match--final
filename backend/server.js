@@ -20,6 +20,7 @@ const fullData = JSON.parse(readFileSync(join(__dirname, "../database/full.json"
 
 let questions = liteData.questions;
 let cities = liteData.cities;
+let currentMode = 'lite'; // 追踪当前测试模式
 
 // ============================================
 // Cosine Similarity — explicit implementation
@@ -73,7 +74,7 @@ function selectBalancedQuestions(allQuestions, count) {
 // Routes
 // ============================================
 
-// POST /api/set-mode — set test mode (lite, advanced, full)
+// POST /api/set-mode — set test mode (lite, advanced, professional, full)
 app.post("/api/set-mode", (req, res) => {
   const { mode } = req.body;
 
@@ -81,17 +82,22 @@ app.post("/api/set-mode", (req, res) => {
     questions = liteData.questions;
     cities = liteData.cities;
   } else if (mode === "advanced") {
-    // 从 full.json 中随机选择 50 道题目（每个特质 10 道）
-    questions = selectBalancedQuestions(fullData.questions, 50);
+    // 进阶版：30 道题目（每个特质 6 道）
+    questions = selectBalancedQuestions(fullData.questions, 30);
+    cities = fullData.cities;
+  } else if (mode === "professional") {
+    // 专业版：60 道题目（每个特质 12 道）
+    questions = selectBalancedQuestions(fullData.questions, 60);
     cities = fullData.cities;
   } else if (mode === "full") {
     // 完整版：200 道题目随机顺序（每个特质 40 道）
     questions = selectBalancedQuestions(fullData.questions, 200);
     cities = fullData.cities;
   } else {
-    return res.status(400).json({ error: "无效的模式。请选择 lite、advanced 或 full。" });
+    return res.status(400).json({ error: "无效的模式。请选择 lite、advanced、professional 或 full。" });
   }
 
+  currentMode = mode;
   res.json({ success: true, mode, questionCount: questions.length, cityCount: cities.length });
 });
 
@@ -158,6 +164,19 @@ app.post("/api/match", (req, res) => {
   results.sort((a, b) => b.match_percent - a.match_percent);
   const top3 = results.slice(0, 3);
 
+  // 计算用户与第一名城市在各维度的差距
+  const topCity = cities.find(c => c.id === top3[0].id);
+  const gaps = {
+    O: Math.abs(userVector[0] - topCity.trait_o),
+    C: Math.abs(userVector[1] - topCity.trait_c),
+    E: Math.abs(userVector[2] - topCity.trait_e),
+    A: Math.abs(userVector[3] - topCity.trait_a),
+    N: Math.abs(userVector[4] - topCity.trait_n)
+  };
+  const sortedTraits = Object.entries(gaps).sort((a, b) => a[1] - b[1]);
+  const dominantTrait = sortedTraits[0][0];
+  const secondTrait = sortedTraits[1][0];
+
   res.json({
     user_vector: {
       O: +userVector[0].toFixed(2),
@@ -167,6 +186,9 @@ app.post("/api/match", (req, res) => {
       N: +userVector[4].toFixed(2),
     },
     top_cities: top3,
+    mode: currentMode,
+    dominant_trait: dominantTrait,
+    second_trait: secondTrait
   });
 });
 

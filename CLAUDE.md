@@ -123,3 +123,7 @@ psql -U <username> -d <database> -f database/init.sql
 3. **CORS 配置**: backend 已启用 CORS，允许跨域请求
 4. **图片资源**: 城市图片使用 Unsplash CDN
 5. **端口配置**: backend 默认 3001，可通过 `PORT` 环境变量修改
+
+## 操作注意
+
+1. 关闭服务器时自动检测端口是否仍有占用，若依旧占用，则关闭进程

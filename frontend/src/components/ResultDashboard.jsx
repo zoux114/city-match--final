@@ -7,6 +7,7 @@ import {
   PolarRadiusAxis,
   ResponsiveContainer,
 } from "recharts";
+import InterpretationSection from "./InterpretationSection.jsx";
 
 const TRAIT_LABELS = {
   O: "开放性",
@@ -86,6 +87,11 @@ export default function ResultDashboard({ result, onRestart }) {
             </div>
           ))}
         </div>
+
+        {/* 结果解读（仅非lite模式） */}
+        {result.mode && result.mode !== 'lite' && (
+          <InterpretationSection result={result} />
+        )}
 
         {/* Top 3 Cities */}
         <h3 className="mb-6 text-center text-2xl font-bold text-white">
