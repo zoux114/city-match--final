@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import LandingPage from "./components/LandingPage.jsx";
 import QuizComponent from "./components/QuizComponent.jsx";
 import ResultDashboard from "./components/ResultDashboard.jsx";
+import { API_BASE_URL } from "./config.js";
 
 /**
  * App — top-level state machine.
@@ -20,7 +21,7 @@ export default function App() {
     const validModes = ['lite', 'advanced', 'professional', 'full'];
 
     if (mode && validModes.includes(mode.toLowerCase())) {
-      fetch('/api/set-mode', {
+      fetch(`${API_BASE_URL}/api/set-mode`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ mode: mode.toLowerCase() })

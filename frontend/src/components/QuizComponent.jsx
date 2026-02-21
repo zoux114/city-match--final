@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { API_BASE_URL } from "../config.js";
 
 const LIKERT_OPTIONS = [
   { value: 1, label: "非常不同意" },
@@ -22,7 +23,7 @@ export default function QuizComponent({ onComplete }) {
 
   // Fetch questions on mount
   useEffect(() => {
-    fetch("/api/questions")
+    fetch(`${API_BASE_URL}/api/questions`)
       .then((r) => r.json())
       .then((data) => {
         setQuestions(data);
@@ -56,7 +57,7 @@ export default function QuizComponent({ onComplete }) {
       answer_value: answers[q.id],
     }));
     try {
-      const res = await fetch("/api/match", {
+      const res = await fetch(`${API_BASE_URL}/api/match`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
