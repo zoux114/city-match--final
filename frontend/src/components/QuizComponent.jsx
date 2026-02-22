@@ -138,7 +138,6 @@ export default function QuizComponent({ onComplete }) {
         body: JSON.stringify(payload),
       });
       const data = await res.json();
-      localStorage.removeItem('city-match-session');
       onComplete(data);
     } catch {
       setSubmitting(false);
