@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import { readFileSync } from "fs";
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from "fs";
 import { fileURLToPath } from "url";
 import { dirname, join } from "path";
 
@@ -10,6 +10,51 @@ const __dirname = dirname(__filename);
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+// ============================================
+// Data persistence setup
+// ============================================
+
+// 确保 data 目录存在
+const dataDir = join(__dirname, "data");
+if (!existsSync(dataDir)) {
+  mkdirSync(dataDir, { recursive: true });
+}
+
+// 初始化数据文件
+const sessionsFile = join(dataDir, "sessions.json");
+const codesFile = join(dataDir, "payment-codes.json");
+
+if (!existsSync(sessionsFile)) {
+  writeFileSync(sessionsFile, JSON.stringify({ sessions: [] }, null, 2));
+}
+if (!existsSync(codesFile)) {
+  writeFileSync(codesFile, JSON.stringify({ codes: [] }, null, 2));
+}
+
+// 读取和保存数据的工具函数
+function loadSessions() {
+  return JSON.parse(readFileSync(sessionsFile, "utf-8"));
+}
+
+function saveSessions(data) {
+  writeFileSync(sessionsFile, JSON.stringify(data, null, 2));
+}
+
+function loadPaymentCodes() {
+  return JSON.parse(readFileSync(codesFile, "utf-8"));
+}
+
+function savePaymentCodes(data) {
+  writeFileSync(codesFile, JSON.stringify(data, null, 2));
+}
+
+// 生成访问令牌
+function generateAccessToken() {
+  return 'tk_' + Array.from({ length: 32 }, () =>
+    Math.random().toString(36)[2] || '0'
+  ).join('');
+}
 
 // ============================================
 // Load data from JSON files
@@ -178,7 +223,7 @@ app.post("/api/match", (req, res) => {
   const dominantTrait = sortedTraits[0][0];
   const secondTrait = sortedTraits[1][0];
 
-  res.json({
+  const result = {
     user_vector: {
       O: +userVector[0].toFixed(2),
       C: +userVector[1].toFixed(2),
@@ -190,6 +235,101 @@ app.post("/api/match", (req, res) => {
     mode: currentMode,
     dominant_trait: dominantTrait,
     second_trait: secondTrait
+  };
+
+  // 生成 sessionId 并保存会话数据
+  const sessionId = 'sess_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+  const sessionsData = loadSessions();
+  sessionsData.sessions.push({
+    sessionId,
+    createdAt: new Date().toISOString(),
+    mode: currentMode,
+    answers,
+    result,
+    isPaid: false,
+    paymentCode: null,
+    accessToken: null,
+    paidAt: null
+  });
+  saveSessions(sessionsData);
+
+  // 返回 sessionId，不返回结果
+  res.json({
+    sessionId,
+    needPayment: true
+  });
+});
+
+// POST /api/verify-payment — 验证兑换码并返回结果
+app.post("/api/verify-payment", (req, res) => {
+  const { sessionId, paymentCode } = req.body;
+
+  if (!sessionId || !paymentCode) {
+    return res.status(400).json({ error: "缺少 sessionId 或 paymentCode" });
+  }
+
+  // 查找 session
+  const sessionsData = loadSessions();
+  const session = sessionsData.sessions.find(s => s.sessionId === sessionId);
+
+  if (!session) {
+    return res.status(404).json({ error: "会话不存在" });
+  }
+
+  if (session.isPaid) {
+    return res.status(400).json({ error: "该会话已经验证过付款" });
+  }
+
+  // 验证兑换码
+  const codesData = loadPaymentCodes();
+  const code = codesData.codes.find(c => c.code === paymentCode && !c.isUsed);
+
+  if (!code) {
+    return res.status(400).json({ error: "兑换码无效或已被使用" });
+  }
+
+  // 标记兑换码为已使用
+  code.isUsed = true;
+  code.usedBy = sessionId;
+  code.usedAt = new Date().toISOString();
+  savePaymentCodes(codesData);
+
+  // 更新 session
+  const accessToken = generateAccessToken();
+  session.isPaid = true;
+  session.paymentCode = paymentCode;
+  session.accessToken = accessToken;
+  session.paidAt = new Date().toISOString();
+  saveSessions(sessionsData);
+
+  // 返回结果和 token
+  res.json({
+    success: true,
+    accessToken,
+    result: session.result
+  });
+});
+
+// POST /api/verify-token — 验证访问令牌（可选，用于刷新后恢复）
+app.post("/api/verify-token", (req, res) => {
+  const { sessionId, accessToken } = req.body;
+
+  if (!sessionId || !accessToken) {
+    return res.status(400).json({ error: "缺少 sessionId 或 accessToken" });
+  }
+
+  const sessionsData = loadSessions();
+  const session = sessionsData.sessions.find(
+    s => s.sessionId === sessionId && s.accessToken === accessToken && s.isPaid
+  );
+
+  if (!session) {
+    return res.status(401).json({ error: "无效的访问令牌" });
+  }
+
+  res.json({
+    success: true,
+    result: session.result
   });
 });
 

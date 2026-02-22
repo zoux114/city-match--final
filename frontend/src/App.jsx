@@ -2,24 +2,27 @@ import { useState, useEffect } from "react";
 import LandingPage from "./components/LandingPage.jsx";
 import QuizComponent from "./components/QuizComponent.jsx";
 import ResultDashboard from "./components/ResultDashboard.jsx";
+import PaymentPage from "./components/PaymentPage.jsx";
 import { API_BASE_URL } from "./config.js";
 
 /**
  * App — top-level state machine.
- * Screens: "landing" → "quiz" → "result"
+ * Screens: "landing" → "quiz" → "payment" → "result"
  */
 export default function App() {
   const [screen, setScreen] = useState("landing");
   const [result, setResult] = useState(null);
+  const [sessionId, setSessionId] = useState(null);
   const [modeInitialized, setModeInitialized] = useState(false);
 
-  // 初始化时恢复保存的结果
+  // 初始化时恢复已付费的结果
   useEffect(() => {
     try {
-      const savedResult = localStorage.getItem('city-match-result');
-      if (savedResult) {
-        const data = JSON.parse(savedResult);
-        setResult(data);
+      const savedPaidResult = localStorage.getItem('city-match-paid-result');
+      if (savedPaidResult) {
+        const data = JSON.parse(savedPaidResult);
+        setResult(data.result);
+        setSessionId(data.sessionId);
         setScreen("result");
       }
     } catch (err) {
@@ -36,7 +39,7 @@ export default function App() {
 
     if (mode && validModes.includes(mode.toLowerCase())) {
       // 检查是否有保存的结果，如果有则不覆盖
-      const savedResult = localStorage.getItem('city-match-result');
+      const savedResult = localStorage.getItem('city-match-paid-result');
       if (savedResult) {
         setModeInitialized(true);
         return;
@@ -75,15 +78,25 @@ export default function App() {
   }, []);
 
   const handleQuizComplete = (data) => {
-    setResult(data);
+    if (data.needPayment) {
+      setSessionId(data.sessionId);
+      setScreen("payment");
+    } else {
+      setResult(data);
+      setScreen("result");
+    }
+  };
+
+  const handlePaymentSuccess = (resultData) => {
+    setResult(resultData);
     setScreen("result");
-    localStorage.setItem('city-match-result', JSON.stringify(data));
   };
 
   const handleRestart = () => {
     localStorage.removeItem('city-match-session');
-    localStorage.removeItem('city-match-result');
+    localStorage.removeItem('city-match-paid-result');
     setResult(null);
+    setSessionId(null);
     setScreen("landing");
     window.history.pushState({}, '', '/');
   };
@@ -101,6 +114,12 @@ export default function App() {
           )}
           {screen === "quiz" && (
             <QuizComponent onComplete={handleQuizComplete} />
+          )}
+          {screen === "payment" && sessionId && (
+            <PaymentPage
+              sessionId={sessionId}
+              onPaymentSuccess={handlePaymentSuccess}
+            />
           )}
           {screen === "result" && result && (
             <ResultDashboard result={result} onRestart={handleRestart} />
