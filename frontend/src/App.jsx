@@ -78,8 +78,18 @@ export default function App() {
   }, []);
 
   const handleQuizComplete = (data) => {
-    if (data.needPayment) {
+    // 轻量版直接显示结果，其他版本显示打赏页面
+    if (data.result && data.result.mode === 'lite') {
+      setResult(data.result);
+      setScreen("result");
+      localStorage.setItem('city-match-paid-result', JSON.stringify({
+        sessionId: data.sessionId,
+        result: data.result,
+        timestamp: Date.now()
+      }));
+    } else if (data.needPayment && data.result) {
       setSessionId(data.sessionId);
+      setResult(data.result);
       setScreen("payment");
     } else {
       setResult(data);
@@ -115,9 +125,10 @@ export default function App() {
           {screen === "quiz" && (
             <QuizComponent onComplete={handleQuizComplete} />
           )}
-          {screen === "payment" && sessionId && (
+          {screen === "payment" && sessionId && result && (
             <PaymentPage
               sessionId={sessionId}
+              result={result}
               onPaymentSuccess={handlePaymentSuccess}
             />
           )}

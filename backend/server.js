@@ -253,10 +253,11 @@ app.post("/api/match", (req, res) => {
   });
   saveSessions(sessionsData);
 
-  // 返回 sessionId，不返回结果
+  // 返回 sessionId 和结果（改为打赏模式）
   res.json({
     sessionId,
-    needPayment: true
+    needPayment: true,
+    result  // 直接返回结果，让前端决定是否显示打赏页面
   });
 });
 

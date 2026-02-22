@@ -5,14 +5,14 @@
 
 export const PAYMENT_CONFIG = {
   // 测试报告价格
-  price: '9.9',
+  price: '1.9',
 
   // 客服联系方式
   wechatId: 'your_wechat_id',  // 修改为你的微信号
   qqNumber: '',                 // 可选：QQ号
 
   // 收款码图片路径（相对于 public 目录）
-  qrCodeImage: '/wechat-qr.png',
+  qrCodeImage: '/my-qrcode.jpg',
 
   // 付款说明文本
   instructions: [

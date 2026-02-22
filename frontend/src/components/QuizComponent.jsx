@@ -189,12 +189,35 @@ export default function QuizComponent({ onComplete }) {
     );
   }
 
+  // 防止刷新后 questions 为空或 current 超出范围
+  if (questions.length === 0) {
+    return (
+      <div className="flex min-h-screen items-center justify-center">
+        <p className="text-lg text-slate-400">加载题目失败，请刷新页面重试</p>
+      </div>
+    );
+  }
+
+  // 如果 current 超出范围，重置到最后一题
+  if (current >= questions.length) {
+    setCurrent(questions.length - 1);
+    return null;
+  }
+
   const q = questions[current];
-  const selected = answers[q?.id];
+  if (!q) {
+    return (
+      <div className="flex min-h-screen items-center justify-center">
+        <p className="text-lg text-slate-400">题目加载异常，请刷新页面</p>
+      </div>
+    );
+  }
+
+  const selected = answers[q.id];
   const isLast = current === questions.length - 1;
   // 检查是否所有题目都已回答（包括当前题）
   const allAnswered = questions.every((question) => {
-    if (question.id === q?.id) {
+    if (question.id === q.id) {
       return selected !== undefined; // 使用当前选中的值
     }
     return answers[question.id] !== undefined;
