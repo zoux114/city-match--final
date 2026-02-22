@@ -103,6 +103,12 @@ export default function QuizComponent({ onComplete }) {
 
   const handleSelect = (value) => {
     setAnswers((prev) => ({ ...prev, [questions[current].id]: value }));
+    if (current < questions.length - 1) {
+      setTimeout(() => {
+        setDirection(1);
+        setCurrent((i) => i + 1);
+      }, 300);
+    }
   };
 
   const goNext = () => {
@@ -233,30 +239,31 @@ export default function QuizComponent({ onComplete }) {
       </div>
 
       {/* Navigation */}
-      <div className="mt-8 flex w-full max-w-lg justify-between">
-        <button
-          onClick={goPrev}
-          disabled={current === 0}
-          className="rounded-lg px-6 py-2.5 text-sm font-medium text-slate-400 transition-colors hover:text-white disabled:opacity-30"
-        >
-          上一题
-        </button>
-
+      <div className="mt-8 flex w-full max-w-lg justify-center">
         {isLast ? (
-          <button
-            onClick={handleSubmit}
-            disabled={!allAnswered || submitting}
-            className="rounded-lg bg-indigo-600 px-8 py-2.5 text-sm font-semibold text-white shadow-lg transition-colors hover:bg-indigo-500 disabled:opacity-40"
-          >
-            {submitting ? "分析中…" : "查看结果"}
-          </button>
+          <div className="flex gap-4">
+            <button
+              onClick={goPrev}
+              disabled={current === 0}
+              className="rounded-lg px-6 py-2.5 text-sm font-medium text-slate-400 transition-colors hover:text-white disabled:opacity-30"
+            >
+              上一题
+            </button>
+            <button
+              onClick={handleSubmit}
+              disabled={!allAnswered || submitting}
+              className="rounded-lg bg-indigo-600 px-8 py-2.5 text-sm font-semibold text-white shadow-lg transition-colors hover:bg-indigo-500 disabled:opacity-40"
+            >
+              {submitting ? "分析中…" : "查看结果"}
+            </button>
+          </div>
         ) : (
           <button
-            onClick={goNext}
-            disabled={selected === undefined}
-            className="rounded-lg bg-indigo-600 px-8 py-2.5 text-sm font-semibold text-white shadow-lg transition-colors hover:bg-indigo-500 disabled:opacity-40"
+            onClick={goPrev}
+            disabled={current === 0}
+            className="rounded-lg px-6 py-2.5 text-sm font-medium text-slate-400 transition-colors hover:text-white disabled:opacity-30"
           >
-            下一题
+            上一题
           </button>
         )}
       </div>
