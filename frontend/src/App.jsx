@@ -13,6 +13,20 @@ export default function App() {
   const [result, setResult] = useState(null);
   const [modeInitialized, setModeInitialized] = useState(false);
 
+  // 初始化时恢复保存的结果
+  useEffect(() => {
+    try {
+      const savedResult = localStorage.getItem('city-match-result');
+      if (savedResult) {
+        const data = JSON.parse(savedResult);
+        setResult(data);
+        setScreen("result");
+      }
+    } catch (err) {
+      console.error('Failed to restore result:', err);
+    }
+  }, []);
+
   // URL参数解析 - 自动初始化测试模式
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -56,10 +70,12 @@ export default function App() {
   const handleQuizComplete = (data) => {
     setResult(data);
     setScreen("result");
+    localStorage.setItem('city-match-result', JSON.stringify(data));
   };
 
   const handleRestart = () => {
     localStorage.removeItem('city-match-session');
+    localStorage.removeItem('city-match-result');
     setResult(null);
     setScreen("landing");
     window.history.pushState({}, '', '/');

@@ -23,6 +23,9 @@ const TRAIT_LABELS = {
 export default function ResultDashboard({ result, onRestart }) {
   const { user_vector, top_cities } = result;
 
+  // Debug: 打印匹配度数据
+  console.log('Top cities match_percent:', top_cities.map(c => ({ name: c.name, match_percent: c.match_percent })));
+
   // Prepare radar chart data
   const radarData = Object.entries(TRAIT_LABELS).map(([key, label]) => ({
     trait: label,
