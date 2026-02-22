@@ -69,6 +69,6 @@ backend/data/sessions.json
 backend/data/payment-codes.json
 
 # Payment QR code images (sensitive)
-frontend/public/wechat-qr.png
-frontend/public/alipay-qr.png
-frontend/public/*-qr.png
+# frontend/public/wechat-qr.png
+# frontend/public/alipay-qr.png
+# frontend/public/*-qr.png
