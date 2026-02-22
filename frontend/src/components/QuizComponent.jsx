@@ -71,20 +71,26 @@ export default function QuizComponent({ onComplete }) {
 
   // Fetch questions on mount or restore session
   useEffect(() => {
+    const currentMode = new URLSearchParams(window.location.search).get('mode') || 'lite';
     const session = loadSession();
-    if (session && session.questions.length > 0) {
+
+    // 只有当保存的模式与当前模式匹配时才恢复会话
+    if (session && session.questions.length > 0 && session.mode === currentMode) {
       setQuestions(session.questions);
       setAnswers(session.answers);
       setCurrent(session.current);
       setLoading(false);
     } else {
+      // 模式不匹配或没有会话，清除旧数据并获取新题目
+      if (session && session.mode !== currentMode) {
+        localStorage.removeItem('city-match-session');
+      }
       fetch(`${API_BASE_URL}/api/questions`)
         .then((r) => r.json())
         .then((data) => {
           const sessionId = generateSessionId();
-          const mode = new URLSearchParams(window.location.search).get('mode') || 'lite';
           setQuestions(data);
-          saveSession(sessionId, mode, data, {}, 0);
+          saveSession(sessionId, currentMode, data, {}, 0);
           setLoading(false);
         })
         .catch(() => setLoading(false));
@@ -126,6 +132,19 @@ export default function QuizComponent({ onComplete }) {
   };
 
   const handleSubmit = async () => {
+    // 检查是否已有保存的结果
+    const savedResult = localStorage.getItem('city-match-result');
+    if (savedResult) {
+      try {
+        const data = JSON.parse(savedResult);
+        onComplete(data);
+        return;
+      } catch (err) {
+        console.error('Failed to parse saved result:', err);
+      }
+    }
+
+    // 没有保存的结果，重新提交
     setSubmitting(true);
     const payload = questions.map((q) => ({
       question_id: q.id,
@@ -155,7 +174,16 @@ export default function QuizComponent({ onComplete }) {
   const q = questions[current];
   const selected = answers[q?.id];
   const isLast = current === questions.length - 1;
-  const allAnswered = questions.every((q) => answers[q.id] !== undefined);
+  // 检查是否所有题目都已回答（包括当前题）
+  const allAnswered = questions.every((question) => {
+    if (question.id === q?.id) {
+      return selected !== undefined; // 使用当前选中的值
+    }
+    return answers[question.id] !== undefined;
+  });
+
+  // Debug
+  console.log('Current:', current, 'isLast:', isLast, 'allAnswered:', allAnswered, 'answersCount:', Object.keys(answers).length, 'questionsCount:', questions.length);
 
   // Slide animation variants
   const variants = {
