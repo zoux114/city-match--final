@@ -103,8 +103,8 @@ app.post("/api/set-mode", (req, res) => {
 
 // GET /api/questions — return the quiz
 app.get("/api/questions", (_req, res) => {
-  // Return questions without revealing is_reverse to the client
-  const payload = questions.map(({ id, text, trait }) => ({ id, text, trait }));
+  // Return questions with is_reverse for frontend OCEAN calculation
+  const payload = questions.map(({ id, text, trait, is_reverse }) => ({ id, text, trait, is_reverse }));
   res.json(payload);
 });
 

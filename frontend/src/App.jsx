@@ -59,6 +59,7 @@ export default function App() {
   };
 
   const handleRestart = () => {
+    localStorage.removeItem('city-match-session');
     setResult(null);
     setScreen("landing");
     window.history.pushState({}, '', '/');
