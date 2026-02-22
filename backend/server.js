@@ -150,13 +150,14 @@ app.post("/api/match", (req, res) => {
       city.trait_o, city.trait_c, city.trait_e, city.trait_a, city.trait_n,
     ];
     const similarity = cosineSimilarity(userVector, cityVector);
+    console.log(`${city.name}: 原始相似度 = ${similarity.toFixed(4)}, 百分比 = ${(similarity * 100).toFixed(2)}%`);
     return {
       id: city.id,
       name: city.name,
       country: city.country,
       description: city.description,
       image_url: city.image_url,
-      match_percent: Math.round(similarity * 100),
+      match_percent: +(similarity * 100).toFixed(1), // 保留一位小数
     };
   });
 
