@@ -12,7 +12,7 @@ export const PAYMENT_CONFIG = {
   qqNumber: '',                 // 可选：QQ号
 
   // 收款码图片路径（相对于 public 目录）
-  qrCodeImage: '/my-qrcode.jpg',
+  qrCodeImage: '/my-qrcode.png',
 
   // 付款说明文本
   instructions: [
