@@ -35,6 +35,13 @@ export default function App() {
     const validModes = ['lite', 'advanced', 'professional', 'full'];
 
     if (mode && validModes.includes(mode.toLowerCase())) {
+      // 检查是否有保存的结果，如果有则不覆盖
+      const savedResult = localStorage.getItem('city-match-result');
+      if (savedResult) {
+        setModeInitialized(true);
+        return;
+      }
+
       fetch(`${API_BASE_URL}/api/set-mode`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

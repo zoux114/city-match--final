@@ -50,12 +50,25 @@ const calculateOceanStats = (answers, questions) => {
       stats[q.trait].push(score);
     }
   });
-  return Object.entries(stats).map(([trait, scores]) => ({
-    trait,
-    answered: scores.length,
-    total: questions.filter(q => q.trait === trait).length,
-    avgScore: scores.length > 0 ? (scores.reduce((a, b) => a + b, 0) / scores.length).toFixed(1) : null
-  }));
+  return Object.entries(stats).map(([trait, scores]) => {
+    if (scores.length === 0) {
+      return { trait, answered: 0, total: questions.filter(q => q.trait === trait).length, percent: null };
+    }
+    // 归一化到 0-100%，与后端计算方式一致
+    const sum = scores.reduce((a, b) => a + b, 0);
+    const n = scores.length;
+    const min = n * 1;
+    const max = n * 5;
+    const normalized = (sum - min) / (max - min);
+    const percent = Math.round(normalized * 100);
+
+    return {
+      trait,
+      answered: scores.length,
+      total: questions.filter(q => q.trait === trait).length,
+      percent
+    };
+  });
 };
 
 /**
@@ -132,33 +145,38 @@ export default function QuizComponent({ onComplete }) {
   };
 
   const handleSubmit = async () => {
-    // 检查是否已有保存的结果
-    const savedResult = localStorage.getItem('city-match-result');
-    if (savedResult) {
-      try {
-        const data = JSON.parse(savedResult);
-        onComplete(data);
-        return;
-      } catch (err) {
-        console.error('Failed to parse saved result:', err);
-      }
-    }
-
     // 没有保存的结果，重新提交
     setSubmitting(true);
-    const payload = questions.map((q) => ({
-      question_id: q.id,
-      answer_value: answers[q.id],
-    }));
+    const payload = questions
+      .filter((q) => answers[q.id] !== undefined)
+      .map((q) => ({
+        question_id: q.id,
+        answer_value: answers[q.id],
+      }));
+
+    console.log('提交的答案数量:', payload.length, '总题目数:', questions.length);
+
     try {
       const res = await fetch(`${API_BASE_URL}/api/match`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
+
+      if (!res.ok) {
+        const error = await res.json();
+        console.error('后端返回错误:', error);
+        alert(`提交失败: ${error.error || '未知错误'}`);
+        setSubmitting(false);
+        return;
+      }
+
       const data = await res.json();
+      console.log('收到结果:', data);
       onComplete(data);
-    } catch {
+    } catch (err) {
+      console.error('提交失败:', err);
+      alert('提交失败，请检查网络连接');
       setSubmitting(false);
     }
   };
@@ -216,12 +234,12 @@ export default function QuizComponent({ onComplete }) {
             📊 维度统计
           </summary>
           <div className="mt-3 space-y-2 text-xs">
-            {calculateOceanStats(answers, questions).map(({ trait, answered, total, avgScore }) => (
+            {calculateOceanStats(answers, questions).map(({ trait, answered, total, percent }) => (
               <div key={trait} className="flex items-center justify-between text-slate-400">
                 <span className="font-mono">{trait}:</span>
                 <span>
                   {answered}/{total} 题
-                  {avgScore && ` · 平均 ${avgScore}`}
+                  {percent !== null && ` · ${percent}%`}
                 </span>
               </div>
             ))}
